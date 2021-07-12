@@ -53,7 +53,7 @@ const Navbar = () => {
                 {/* Asad Ansari logo here */}
                 <h1 className='navbar-header'>
                     <a href='/' className='navbar-logo'>
-                        <b style={{ color: 'skyblue' }}>Asad</b>Ansari
+                        <b style={{ color: 'teal' }}>Asad</b>Ansari
                     </a>
                 </h1>
 
@@ -61,7 +61,7 @@ const Navbar = () => {
                 <div className='menu-icon' onClick={handleClick}>
                     <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-                <ul>
+                <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
