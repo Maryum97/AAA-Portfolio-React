@@ -1,0 +1,12 @@
+/* css for page elements starts here */
+
+.page-header {
+      padding: 1.4%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      text-align: center;
+      background-color: red;
+      color: white;
+  }
+  
