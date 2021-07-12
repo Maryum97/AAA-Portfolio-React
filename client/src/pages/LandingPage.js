@@ -27,6 +27,42 @@ const LandingPage = () => {
             <div className='page-header'>
                 Hello, I'm the landing page!
             </div>
+            <div className='page-header'>
+                Hello, I'm the landing page!
+            </div>
+            <div className='page-header'>
+                Hello, I'm the landing page!
+            </div>
+            <div className='page-header'>
+                Hello, I'm the landing page!
+            </div>
+            <div className='page-header'>
+                Hello, I'm the landing page!
+            </div>
+            <div className='page-header'>
+                Hello, I'm the landing page!
+            </div>
+            <div className='page-header'>
+                Hello, I'm the landing page!
+            </div>
+            <div className='page-header'>
+                Hello, I'm the landing page!
+            </div>
+            <div className='page-header'>
+                Hello, I'm the landing page!
+            </div>
+            <div className='page-header'>
+                Hello, I'm the landing page!
+            </div>
+            <div className='page-header'>
+                Hello, I'm the landing page!
+            </div>
+            <div className='page-header'>
+                Hello, I'm the landing page!
+            </div>
+            <div className='page-header'>
+                Hello, I'm the landing page!
+            </div>
         <Contact />
         </div>
     )
