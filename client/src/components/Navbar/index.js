@@ -22,6 +22,9 @@ const Navbar = () => {
     // states for navbar color-change
     const [navbar, setNavbar] = useState(false)
 
+    // states for menu color-change
+    const [menu, setMenu] = useState(false)
+
     // DEFINE FUNCTIONS HERE
 
     // function to handle click event for fa-icons 
@@ -40,8 +43,20 @@ const Navbar = () => {
         }
     }
 
+    // function to change menu color
+    const changeMenuColor = () => {
+        if (window.scrollY >= 140) {
+            setMenu(true);
+        }
+
+        else {
+            setMenu(false);
+        }
+    }
+
     // change color ON SCROLL
     window.addEventListener('scroll', changeNavbarColor);
+    window.addEventListener('scroll', changeMenuColor);
 
     return (
         // Navbar starts here
@@ -64,7 +79,10 @@ const Navbar = () => {
                 <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
-                            <li key={index}>
+                            <li
+                                className={menu ? 'menu-scrolled' : 'menu'}
+                                key={index}
+                            >
                                 <a
                                     className={item.cName}
                                     href={item.url}

@@ -9,6 +9,7 @@
     margin-left: auto;
     left: -1.7pt;
     padding: 1.7%;
+    transition: 0.6s;
     background-color: #15023a;
 }
 
@@ -19,7 +20,7 @@
 
 /* Navbar logo */
 .navbar-logo {
-    color: skyblue;
+    color: cyan;
     font-size: 30pt;
     padding: 1%;
     text-decoration: none;
@@ -52,7 +53,7 @@
 }
 
 .nav-link {
-    color: teal;
+    color: cyan;
     text-decoration: none;
     padding: 0.5rem 1rem;
     text-align: center;
@@ -67,7 +68,7 @@
 
 /* Navbar icons */
 .fa-bars, .fa-times {
-    color: teal;
+    color: cyan;
 }
 
 .menu-icon {
@@ -84,9 +85,9 @@
     }    
 }
 
-/* 945px - for most of the other elements */
+/* 970px - for most of the other elements */
 /* also to make the nav-menu disappear and show the nav-icons */
-@media screen and (max-width:945px) {
+@media screen and (max-width:970px) {
     .navbar {
         position: absolute;
     }
@@ -101,20 +102,30 @@
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 145px;
+        top: 125px;
         right: -120%;
         opacity: 1;
         transition: all 0.5s ease; 
     }
 
     .nav-menu.active {
-        background-color: #15023a;
-        width: 40%;
+        width: 42%;
         right: -10%;
         padding: 3%;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
+    }
+
+    .menu {
+        padding: 5%;
+        transition: 0.6s;
+        background-color: #15023ace;
+    }
+
+    .menu-scrolled {
+        transition: 0.6s;
+        background-color: #15023a00;
     }
 
     .menu-icon {
