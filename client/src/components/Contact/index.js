@@ -4,7 +4,9 @@ import './style.css';
 const Contact = () => {
     return (
         <div className='contact'>
-            Hi, Contact Me Here!
+            <div className='contact-content'>
+                <h1>Hi, contact me here!</h1>
+            </div>
         </div>
     )
 }
