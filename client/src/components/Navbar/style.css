@@ -42,11 +42,13 @@
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-gap: 10px;
+    grid-gap: 7px;
     list-style: none;
-    width: 70vw;
+    width: 90vw;
     justify-content: end;
     margin-right: 2rem;
+    margin-top: -45px;
+    font-size: 14pt;
 }
 
 .nav-link {
@@ -68,16 +70,57 @@
     color: teal;
 }
 
+.menu-icon {
+    display: none;
+}
+
+
 /* media queries here */
 
+/* 1560px - just for logo */
 @media screen and (max-width:1560px) {
     .navbar-logo {
         font-size: 27pt;
     }    
 }
 
-@media screen and (max-width:960px) {
+/* 945px - for most of the other elements */
+/* also to make the nav-menu disappear and show the nav-icons */
+@media screen and (max-width:945px) {
+    .navbar {
+        position: absolute;
+    }
+
     .navbar-logo {
         font-size: 24pt;
-    }    
+        margin-right: 240px;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 145px;
+        right: -120%;
+        opacity: 1;
+        transition: all 0.5s ease; 
+    }
+
+    .nav-menu.active {
+        background-color: #15023a;
+        width: 40%;
+        right: -10%;
+        padding: 3%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .menu-icon {
+        display: flex;
+        font-size: 20pt;
+        margin-left: 365px;
+        margin-top: -37px;
+    }
 }
