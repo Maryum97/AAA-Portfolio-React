@@ -1,0 +1,44 @@
+.navbar {
+    width: 100%;
+    max-height: 140px;
+    background-color: #15023a;
+    margin-right: auto;
+    margin-left: auto;
+    left: -1.7pt;
+    padding: 1.7%;
+}
+
+.navbar-logo {
+    color: white;
+    font-size: 30pt;
+    padding: 1%;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.navbar-logo:hover {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 1px 0 rgb(112, 112, 112), 0 2px 0 rgb(112, 112, 112),
+               0 3px 0 rgb(112, 112, 112), 0 4px 0 rgb(112, 112, 112),
+               0 5px 0 rgb(112, 112, 112), 0 6px 0 rgb(112, 112, 112),
+               0 7px 0 rgb(112, 112, 112), 0 8px 0 rgb(112, 112, 112),
+               0 9px 0 rgb(112, 112, 112), 0 10px 0 rgb(112, 112, 112),
+               0 11px 0 rgb(112, 112, 112), 0 12px 0 rgb(112, 112, 112),
+               0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* media queries here */
+
+@media screen and (max-width:1560px) {
+    .navbar-logo {
+        font-size: 27pt;
+    }    
+}
+
+@media screen and (max-width:960px) {
+    .navbar-logo {
+        font-size: 24pt;
+    }    
+}
