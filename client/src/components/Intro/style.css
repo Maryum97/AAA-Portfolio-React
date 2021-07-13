@@ -22,6 +22,12 @@
     border-radius: 700px;
 }
 
+@media screen and (max-width: 960px) {
+    .AsadPic {
+       margin-top: 30pt;
+    }
+}
+
 .intro-grid {
     padding: 4%;
     border: none;
