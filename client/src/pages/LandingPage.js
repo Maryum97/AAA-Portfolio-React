@@ -4,6 +4,7 @@ import './style.css';
 // import components here
 import Navbar from '../components/Navbar';
 import Intro from '../components/Intro';
+import Portfolio from '../components/PortfolioItems';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
@@ -12,7 +13,8 @@ const LandingPage = () => {
         <div className='landing-page'>
             <Navbar />
             <Intro />
-            <div className='page-header'>
+            <Portfolio />
+            <div className='page-header' style={{ marginTop: '100px' }}>
                 Hello, I'm the landing page!
             </div>
             <div className='page-header'>
