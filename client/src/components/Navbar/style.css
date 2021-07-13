@@ -1,14 +1,14 @@
 /* Navbar itself, as a whole */
 .navbar {
     width: 105%;
-    height: 100px;
+    height: 116px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
     left: -1.7pt;
-    padding: 1.7%;
+    padding: 1.5%;
     transition: 0.6s;
     background-color: #15023a;
 }
