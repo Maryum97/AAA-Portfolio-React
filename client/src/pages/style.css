@@ -1,4 +1,7 @@
 /* css for page elements starts here */
+body {
+    background-color: white
+}
 
 .page-header {
       padding: 1.4%;
