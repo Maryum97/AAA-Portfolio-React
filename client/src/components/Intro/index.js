@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './style.css';
+import Text from './Text';
 
 // framer motion dependencies
 import { motion } from 'framer-motion';
@@ -32,21 +33,21 @@ const Intro = () => {
             <div className='intro-content card'>
                 <div className='inner-intro-content card'>
                     <h1 className='intro-header'>
-                        <span>Hello, meet Asad Aamir Ansari...</span>
+                        <Text />
                     </h1>
                     <br></br>
                     <div className='intro-grid card'>
                         <ImageContainer
                             animate={{
-                                scale: [0, 1.4, 1],
+                                scale: [0, 1.4, 0.8],
                                 rotate: [0, 60, -360],
                                 x: -10,
-                                y: 40,
+                                y: -40,
                                 scaleX: [-5, 0, 1],
                                 scaleY: [0, 1.05]
                             }}
                             transition={{
-                                duration: 2,
+                                duration: 3,
                                 delay: 1
                             }}
                         >

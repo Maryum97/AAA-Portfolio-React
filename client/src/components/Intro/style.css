@@ -3,17 +3,19 @@
 }
 
 .intro-content {
-    margin-top: 75px;
+    margin-top: 67px;
     margin-bottom: 100px;
     text-align: center;
     padding: 0.4%;
-    background-color: rgba(128, 128, 128, 0.438);
-    border-radius: 10px;
+    /* background-color: rgba(128, 128, 128, 0.438);
+    border-radius: 10px; */
+    border: none;
 }
 
 .inner-intro-content {
-    padding: 5%;
-    border-radius: 10px;
+    padding: 2%;
+    /* border-radius: 10px; */
+    border: none;
 }
 
 .AsadPic {
@@ -39,9 +41,46 @@
     .intro-grid {
         transition: 1.3s;
         grid-template-columns: auto;
-    }    
+    } 
+    
+    h1 {
+        font-size: 30pt;
+    }
 }
 
 .aboutAsad {
     font-size: 14pt;
 }
+
+h1 span span {
+    font-size: 45pt;
+    position: relative;
+    animation: move-text-color 0.4s forwards;
+    bottom: -1em;
+    opacity: 0;
+  }
+  
+  @keyframes move-text-color {
+    0% {
+      bottom: -0.2em;
+      opacity: 1;
+      color: #3E5C76;
+    }
+    
+    50% {
+      bottom: 0.2em;
+      color: #c00a77;
+    }
+  
+    100% {
+      bottom: 0;
+      opacity: 1;
+      color: #15023a;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    h1 {
+        font-size: 30pt;
+    }
+  }
