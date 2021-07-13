@@ -5,6 +5,7 @@ import './style.css';
 import Navbar from '../components/Navbar';
 import Intro from '../components/Intro';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const LandingPage = () => {
     return (
@@ -66,6 +67,7 @@ const LandingPage = () => {
                 Hello, I'm the landing page!
             </div>
         <Contact />
+        <Footer />
         </div>
     )
 }
