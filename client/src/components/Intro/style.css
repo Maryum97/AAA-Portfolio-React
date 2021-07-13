@@ -28,14 +28,14 @@
     transition: 1.3s;
     /* grid for card */
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 300px;
+    grid-template-columns: 600px auto;
+    grid-gap: 100px;
     column-width: auto;
 }
 
 @media screen and (max-width: 1220px) {
     .intro-content {
-        margin-top: 100px;
+        margin-top: 120px;
     }
 
     .intro-grid {
@@ -52,8 +52,9 @@
     font-size: 14pt;
 }
 
+/* animation for header */
 h1 span span {
-    font-size: 45pt;
+    font-size: 60pt;
     position: relative;
     animation: move-text-color 0.4s forwards;
     bottom: -1em;
@@ -82,5 +83,17 @@ h1 span span {
   @media screen and (max-width: 960px) {
     h1 {
         font-size: 30pt;
+    }
+  }
+
+  .paragraph-text {
+      margin-top: 30pt;
+      font-size: 27pt;
+      font-weight: 400
+  }
+
+  @media screen and (max-width: 960px) {
+    .paragraph-text {
+        font-size: 24pt;
     }
   }

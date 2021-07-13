@@ -21,7 +21,7 @@ class SplitText extends Component {
     }
 }
 
-class Text extends Component {
+class HeaderText extends Component {
     render() {
         return (
             <h1><SplitText copy="Hello, meet Asad Aamir Ansari..." role="heading" /></h1>
@@ -29,4 +29,4 @@ class Text extends Component {
     }
 }
 
-export default Text;
+export default HeaderText;
