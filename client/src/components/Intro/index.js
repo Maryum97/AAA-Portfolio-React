@@ -67,6 +67,10 @@ const Intro = () => {
                             className='about-text'
                             style={{ marginTop: '25px' }}
                             data-aos='fade-in'
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                            data-aos-delay="1300"
                         >
                             <AboutText />
                         </div>
