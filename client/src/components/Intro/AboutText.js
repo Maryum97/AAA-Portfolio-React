@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TextTransition, { presets } from "react-text-transition";
+import './style.css';
 
 // define text items here
 const TEXTS = [
