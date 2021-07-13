@@ -1,0 +1,26 @@
+.footer-container {
+    color: cyan;
+    background-color: #15023a;
+    padding: 1.5%;
+    text-align: center;
+    font-size: 14pt;
+}
+
+footer {
+    /* define grid here */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    column-width: auto;
+}
+
+@media screen and (max-width: 960px) {
+    .footer-container {
+        font-size: 11pt;
+        padding: 2%;
+    }
+
+    footer {
+        grid-template-columns: auto;
+    }
+}
