@@ -69,8 +69,8 @@ const Intro = () => {
                             data-aos='fade-in'
                             data-aos-easing="ease-in-out"
                             data-aos-mirror="true"
-                            data-aos-once="false"
-                            data-aos-delay="1300"
+                            data-aos-once="true"
+                            data-aos-delay="1500"
                         >
                             <AboutText />
                         </div>
