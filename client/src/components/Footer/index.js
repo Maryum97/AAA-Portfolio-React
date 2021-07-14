@@ -10,17 +10,14 @@ import LinkedIn from '../../assets/SocialMediaLinks/linkedin.png';
 // define styles here
 const myStyles = {
     icon: {
-        height: '25px'
+        height: '36px'
     }
 }
 
 const Footer = () => {
     return (
-        <div className='footer-container'>
-            <footer>
-                <div className='copyright'>
-                    © Copyright Asad Ansari 2021
-                </div>
+        <div className='footer'>
+            <div className='footer-container'>
                 <div className='social-medias'>
                     <a href='https://www.facebook.com/asadans4ri' target='_blank'>
                         <img
@@ -31,6 +28,7 @@ const Footer = () => {
                         </img>
                     </a>
                     <span>  </span>
+                    <span>  </span>
                     <a href='https://www.instagram.com/asadans4ri/' target='_blank'>
                         <img
                             src={Instagram}
@@ -39,6 +37,7 @@ const Footer = () => {
                         >
                         </img>
                     </a>
+                    <span>  </span>
                     <span>  </span>
                     <a href='https://twitter.com/asadans4ri' target='_blank'>
                         <img
@@ -49,6 +48,7 @@ const Footer = () => {
                         </img>
                     </a>
                     <span>  </span>
+                    <span>  </span>
                     <a href='https://www.linkedin.com/in/asadansari1/' target='_blank'>
                         <img
                             src={LinkedIn}
@@ -57,6 +57,11 @@ const Footer = () => {
                         >
                         </img>
                     </a>
+                </div>
+            </div>
+            <footer>
+                <div className='copyright'>
+                    © Copyright Asad Ansari 2021
                 </div>
                 <div className='back-to-top'>
                     <a>Back To Top</a>

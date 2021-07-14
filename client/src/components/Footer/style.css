@@ -1,26 +1,48 @@
 .footer-container {
     color: cyan;
     background-color: #15023a;
-    padding: 1.5%;
+    padding: 1.7%;
+    height: 160px;
     text-align: center;
     font-size: 14pt;
 }
 
 footer {
+    background-color: teal;
+    color: cyan;
+    width: 100%;
+    padding: 1.5%;
+    text-align: center;
+    font-size: 15pt;
     /* define grid here */
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     grid-gap: 10px;
     column-width: auto;
 }
 
-@media screen and (max-width: 960px) {
+.social-medias {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    margin-bottom: 30pt;
+}
+
+@media screen and (max-width: 1220px) {
+
     .footer-container {
-        font-size: 11pt;
-        padding: 2%;
+        height: 130px;
+        padding: 4%;
     }
 
     footer {
         grid-template-columns: auto;
+        font-size: 12pt;
+    }
+
+    .social-medias {
+        width: 80%;
+        font-size: 30pt;
     }
 }
