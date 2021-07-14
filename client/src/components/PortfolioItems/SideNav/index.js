@@ -5,7 +5,7 @@ import './style.css';
 // import sidenav data here
 import { SideNavData } from './SideNavData';
 
-const SideNav = () => {
+const SideNav = (props) => {
     // define states here
     const [sidebar, setSidebar] = useState(false);
 
@@ -27,7 +27,11 @@ const SideNav = () => {
                                 key={index}
                                 className={item.cName}
                             >
-                                <Link to={item.path} className='link'>
+                                <Link
+                                    to={item.path}
+                                    className='link'
+                                    onClick={() => props.handleComponentChange(item.title)}
+                                >
                                     <span className='item-icon'>
                                         {item.icon}
                                     </span>

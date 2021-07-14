@@ -10,7 +10,7 @@
 /* sidenav active */
 .sidenav.active {
     transition: 1s;
-    width: 40%;
+    width: 45%;
 }
 
 .menu-bars {
