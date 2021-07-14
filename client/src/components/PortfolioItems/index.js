@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import './style.css';
 
 // import other components here
@@ -39,17 +40,22 @@ const Portfolio = () => {
                             currentComponent={currentComponent}
                             handleComponentChange={handleComponentChange}
                         />
-                        <Switch className='switch'>
-                            <Route exact path={'/'} component={Business}>
-                                {renderComponent()}
-                            </Route>
-                            <Route exact path={'/'} component={Philanthropy}>
-                                {renderComponent()}
-                            </Route>
-                            <Route exact path={'/'} component={Awards}>
-                                {renderComponent()}
+                        <AnimatePresence
+                            exitBeforeEnter
+                            className='animate-presence'
+                        >
+                            <Switch>
+                                <Route exact path={'/'} component={Business}>
+                                    {renderComponent()}
                                 </Route>
-                        </Switch>
+                                <Route exact path={'/'} component={Philanthropy}>
+                                    {renderComponent()}
+                                </Route>
+                                <Route exact path={'/'} component={Awards}>
+                                    {renderComponent()}
+                                </Route>
+                            </Switch>
+                        </AnimatePresence>
                     </Router>
                 </div>
             </div>
