@@ -34,23 +34,23 @@ const Portfolio = () => {
         <div className='portfolio'>
             <div className='portfolio-container card'>
                 <div className='inner-container card'>
-                    <div className='sidenav-routes'>
-                        <Router>
-                            <SideNav
-                                currentComponent={currentComponent}
-                                handleComponentChange={handleComponentChange}
-                            />
-                            <Switch>
-                                <Route exact path={'/'} component={Business} />
-                                <Route exact path={'/'} component={Philanthropy} />
-                                <Route exact path={'/'} component={Awards} />
-                            </Switch>
-                        </Router>
-                    </div>
-                    <div className='portfolio-content'>
-                        Hi, random text here...
-                        {renderComponent()}
-                    </div>
+                    <Router className='router'>
+                        <SideNav
+                            currentComponent={currentComponent}
+                            handleComponentChange={handleComponentChange}
+                        />
+                        <Switch className='switch'>
+                            <Route exact path={'/'} component={Business}>
+                                {renderComponent()}
+                            </Route>
+                            <Route exact path={'/'} component={Philanthropy}>
+                                {renderComponent()}
+                            </Route>
+                            <Route exact path={'/'} component={Awards}>
+                                {renderComponent()}
+                                </Route>
+                        </Switch>
+                    </Router>
                 </div>
             </div>
         </div>

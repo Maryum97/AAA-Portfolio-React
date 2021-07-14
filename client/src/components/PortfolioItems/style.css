@@ -14,7 +14,7 @@
     border-color: #15023a;
     /* define grid here, for nav and page to render tidily */
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 55%;
     grid-gap: 10px;
     column-width: auto;
 }
