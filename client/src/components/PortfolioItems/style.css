@@ -5,6 +5,11 @@
 .portfolio-container {
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: rgba(128, 128, 128, 0.363);
+    background-color: #15023a;
     padding: 0.3%;
+    border-color: #15023a;
+}
+
+.inner-container {
+    border-color: #15023a;
 }

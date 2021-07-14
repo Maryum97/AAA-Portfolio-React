@@ -1,0 +1,119 @@
+/* sidenav non-active */
+.sidenav {
+    position: relative;
+    background-color: #15023a;
+    transition: 1s;
+    width: 8%;
+    padding: 1%;
+}
+
+/* sidenav active */
+.sidenav.active {
+    transition: 1s;
+    width: 20%;
+}
+
+.menu-bars {
+    color: cyan;
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    background: none;
+}
+
+.sidenav-menu {
+    background-color: #15023a;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    position: relative;
+    transition: 1s;
+}
+
+/* sidenav non-active */
+.sidenav-menu-items {
+    text-decoration: none;
+    margin-left: -40pt;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+/* sidenav active */
+.sidenav-menu-items.active {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.sidenav-text {
+    left: 10px;
+    width: 110%;
+    text-decoration: none;
+    color: cyan;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 7px;
+    list-style: none;
+}
+
+.sidenav-text:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(3, 150, 150, 0.411);
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.item-title, .item-icon {
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: 350;
+    color: cyan;
+}
+
+.item-title:hover {
+    color: cyan;
+    transition: all 0.3s ease-out;
+}
+
+.item-title:active {
+    color: white;
+}
+
+Link, .link {
+    color: cyan;
+    text-decoration: none;
+}
+
+.fa-bars, .fa-times {
+    font-size: 20pt;
+    font-weight: 400;
+    margin-left: -10px;
+}
+
+/* media queries here */
+@media screen and (max-width: 960px) {
+    .sidenav {
+        width: 11%;
+    }
+
+    .sidenav.active {
+        width: 25%;
+    }
+
+    .sidenav-menu-items.active {
+        margin-left: -30px;
+    }
+
+    .item-title {
+        font-size: 14pt;
+    }
+
+    .item-icon {
+        display: none;
+    }
+
+    .fa-bars, .fa-times {
+        margin-left: -20px;
+    }
+}
