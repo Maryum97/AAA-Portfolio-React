@@ -10,11 +10,11 @@ import Awards from './Awards';
 
 const Portfolio = () => {
     // define states here
-    const [currentComponent, setCurrentComponent] = useState('Business')
+    const [currentComponent, setCurrentComponent] = useState('')
 
     // define function to change component state
-    const handleComponentChange = () => {
-        setCurrentComponent(currentComponent);
+    const handleComponentChange = (component) => {
+        setCurrentComponent(component);
     }
 
     // define function to change component
