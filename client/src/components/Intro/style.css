@@ -2,6 +2,12 @@
     padding: 4%;
 }
 
+@media screen and (max-width: 1420px) {
+    .page-intro {
+        height: 2000px;
+    }    
+}
+
 .intro-content {
     margin-top: 67px;
     margin-bottom: 100px;
@@ -34,7 +40,7 @@
     transition: 1.3s;
     /* grid for card */
     display: grid;
-    grid-template-columns: 600px auto;
+    grid-template-columns: 550px auto;
     grid-gap: 100px;
     column-width: auto;
 }
@@ -92,7 +98,7 @@ h1 span span {
     }
   }
 
-  .paragraph-container {
+  .about-text {
       margin-top: 10px;
   }
 
@@ -103,7 +109,14 @@ h1 span span {
   }
 
   @media screen and (max-width: 960px) {
-    .paragraph-text {
+      .about-text {
+        overflow: hidden;
+        display: block;
+        height: 600px;
+        margin-top: 30px;
+      }
+
+      .paragraph-text {
         font-size: 20pt;
     }
   }
