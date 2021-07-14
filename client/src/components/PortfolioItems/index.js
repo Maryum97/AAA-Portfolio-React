@@ -13,7 +13,7 @@ function Portfolio() {
         <div className='portfolio'>
             <div className='portfolio-container card'>
                 <div className='inner-container card'>
-                    <h1>
+                    <div className='sidenav-routes'>
                         <Router>
                             <SideNav />
                             <Switch>
@@ -22,8 +22,13 @@ function Portfolio() {
                                 <Route exact path={'/'} component={Awards} />
                             </Switch>
                         </Router>
-                        Portfolio here.
-                    </h1>
+                    </div>
+                    <div className='portfolio-content'>
+                        Hi, random text here...
+                        <Business />
+                        <Awards />
+                        <Philanthropy />
+                    </div>
                 </div>
             </div>
         </div>
