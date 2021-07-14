@@ -13,12 +13,12 @@ const Portfolio = () => {
     const [currentComponent, setCurrentComponent] = useState('Business')
 
     // define function to change component state
-    handleComponentChange = () => {
+    const handleComponentChange = () => {
         setCurrentComponent(currentComponent);
     }
 
     // define function to change component
-    renderComponent = () => {
+    const renderComponent = () => {
         if (currentComponent === 'Business') {
             return <Business />
         }
@@ -35,15 +35,15 @@ const Portfolio = () => {
             <div className='portfolio-container card'>
                 <div className='inner-container card'>
                     <div className='sidenav-routes'>
-                        {/* <Router> */}
+                        <Router>
                             <SideNav
                             />
-                            {/* <Switch>
+                            <Switch>
                                 <Route exact path={'/'} component={Business} />
                                 <Route exact path={'/'} component={Philanthropy} />
                                 <Route exact path={'/'} component={Awards} />
-                            </Switch> */}
-                        {/* </Router> */}
+                            </Switch>
+                        </Router>
                     </div>
                     <div className='portfolio-content'>
                         Hi, random text here...
