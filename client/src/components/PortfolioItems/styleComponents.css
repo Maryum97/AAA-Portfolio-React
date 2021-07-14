@@ -1,0 +1,25 @@
+.welcome-msg {
+    text-align: center;
+    font-size: 65pt;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+#business, #philanthropy, #awards {
+    /* grid here */
+    margin-top: -150px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto 75%;
+}
+
+@media screen and (max-width: 960px) {
+    .welcome-msg {
+        font-size: 50pt;
+        margin-top: 130pt;
+    }
+
+    #business, #philanthropy, #awards {
+        grid-template-columns: auto;
+    }
+}
