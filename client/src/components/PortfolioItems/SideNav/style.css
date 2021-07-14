@@ -10,7 +10,7 @@
 /* sidenav active */
 .sidenav.active {
     transition: 1s;
-    width: 45%;
+    width: 40%;
 }
 
 .menu-bars {
@@ -34,7 +34,7 @@
 /* sidenav non-active */
 .sidenav-menu-items {
     text-decoration: none;
-    margin-left: -40pt;
+    margin-left: -30pt;
     transition: 0.2s;
     opacity: 0;
 }
@@ -46,7 +46,6 @@
 }
 
 .sidenav-text {
-    left: 10px;
     width: 110%;
     text-decoration: none;
     color: cyan;
