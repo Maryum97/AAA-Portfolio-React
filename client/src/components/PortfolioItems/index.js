@@ -37,6 +37,8 @@ const Portfolio = () => {
                     <div className='sidenav-routes'>
                         <Router>
                             <SideNav
+                                currentComponent={currentComponent}
+                                handleComponentChange={handleComponentChange}
                             />
                             <Switch>
                                 <Route exact path={'/'} component={Business} />
@@ -47,9 +49,6 @@ const Portfolio = () => {
                     </div>
                     <div className='portfolio-content'>
                         Hi, random text here...
-                        {/* <Business />
-                        <Awards />
-                        <Philanthropy /> */}
                         {renderComponent()}
                     </div>
                 </div>
