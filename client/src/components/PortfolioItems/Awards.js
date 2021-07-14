@@ -2,8 +2,8 @@ import React from 'react'
 
 function Awards() {
     return (
-        <div>
-            
+        <div id='awards'>
+            <h1>Awards here</h1>
         </div>
     )
 }
