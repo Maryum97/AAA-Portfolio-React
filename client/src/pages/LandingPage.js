@@ -10,10 +10,14 @@ import Footer from '../components/Footer';
 
 const LandingPage = () => {
     return (
-        <div className='landing-page'>
+        <div id='landing-page'>
             <Navbar />
-            <Intro />
-            <Portfolio />
+            <div id='about'>
+                <Intro />
+            </div>
+            <div id='portfolio'>
+                <Portfolio />
+            </div>
             <div className='page-header' style={{ marginTop: '100px' }}>
                 Hello, I'm the landing page!
             </div>
@@ -29,47 +33,10 @@ const LandingPage = () => {
             <div className='page-header'>
                 Hello, I'm the landing page!
             </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
+            <div id='contact'>
+                <Contact />
             </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-        <Contact />
-        <Footer />
+            <Footer />
         </div>
     )
 }
