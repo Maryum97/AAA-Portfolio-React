@@ -20,7 +20,29 @@ function Philanthropy() {
             variants={pageTransitions}
             id='philanthropy'
         >
-            <h1>Philanthropy here</h1>
+            <div className='empty'></div>
+            <div className='content'>
+                <h1>Philanthropy here</h1>
+
+                <div className='page-header' style={{ marginTop: '100px' }}>
+                    Hello, I'm the landing page!
+                </div>
+                <div className='page-header'>
+                    Hello, I'm the landing page!
+                </div>
+                <div className='page-header'>
+                    Hello, I'm the landing page!
+                </div>
+                <div className='page-header'>
+                    Hello, I'm the landing page!
+                </div>
+                <div className='page-header'>
+                    Hello, I'm the landing page!
+                </div>
+                <div className='page-header'>
+                    Hello, I'm the landing page!
+                </div>
+            </div>
         </motion.div>
     )
 }

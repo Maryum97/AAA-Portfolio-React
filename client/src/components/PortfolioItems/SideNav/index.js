@@ -5,6 +5,14 @@ import './style.css';
 // import sidenav data here
 import { SideNavData } from './SideNavData';
 
+// define styles here
+const myStyles = {
+    sideNav: {
+        zIndex: '1',
+        position: 'absolute'
+    }
+}
+
 const SideNav = (props) => {
     // define states here
     const [sidebar, setSidebar] = useState(false);
@@ -15,7 +23,7 @@ const SideNav = (props) => {
     }
 
     return (
-        <div className={sidebar ? 'sidenav active' : 'sidenav'}>
+        <div className={sidebar ? 'sidenav active' : 'sidenav'} style={myStyles.sideNav}>
             <Link to='#' className='menu-bars' onClick={handleClick}>
                 <i className={sidebar ? 'fas fa-times' : 'fas fa-bars'}></i>
             </Link>

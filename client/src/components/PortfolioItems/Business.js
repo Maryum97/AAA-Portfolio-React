@@ -20,25 +20,28 @@ function Business() {
             variants={pageTransitions}
             id='business'
         >
-            <h1>Business here</h1>
-            
-            <div className='page-header' style={{ marginTop: '100px' }}>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
+            <div className='empty'></div>
+            <div className='content'>
+                <h1>Business here</h1>
+
+                <div className='page-header' style={{ marginTop: '100px' }}>
+                    Hello, I'm the landing page!
+                </div>
+                <div className='page-header'>
+                    Hello, I'm the landing page!
+                </div>
+                <div className='page-header'>
+                    Hello, I'm the landing page!
+                </div>
+                <div className='page-header'>
+                    Hello, I'm the landing page!
+                </div>
+                <div className='page-header'>
+                    Hello, I'm the landing page!
+                </div>
+                <div className='page-header'>
+                    Hello, I'm the landing page!
+                </div>
             </div>
         </motion.div>
     )

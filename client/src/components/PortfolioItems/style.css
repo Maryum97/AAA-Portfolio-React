@@ -14,17 +14,17 @@
     border-color: #15023a;
     max-height: 70vh;
     overflow-y: scroll;
-    /* define grid here, for nav and page to render tidily */
-    display: grid;
-    grid-template-columns: auto 55%;
-    grid-gap: 10px;
-    column-width: auto;
 }
 
-/* media queries here */
+#business, #philanthropy, #awards {
+    /* grid here */
+    display: grid;
+    grid-template-columns: auto 75%;
+}
+
 @media screen and (max-width: 960px) {
-    .inner-container {
+    #business, #philanthropy, #awards {
+        margin-top: 100px;
         grid-template-columns: auto;
-        max-height: 80vh;
     }
 }
