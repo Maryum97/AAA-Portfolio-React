@@ -9,7 +9,8 @@ import { SideNavData } from './SideNavData';
 const myStyles = {
     sideNav: {
         zIndex: '1',
-        position: 'absolute'
+        position: 'sticky',
+        top: 0
     }
 }
 

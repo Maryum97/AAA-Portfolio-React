@@ -1,33 +1,34 @@
 /* sidenav non-active */
 .sidenav {
     background-color: #15023a;
-    height: 30vh;
     border-radius: 1px 1px 200px 1px;
     transition: 1s;
-    width: 8%;
-    padding: 1%;
+    height: 100px;
+    width: 9%;
+    padding: 0%;
 }
 
 /* sidenav active */
 .sidenav.active {
     transition: 1s;
-    width: 24%;
-    height: 40vh;
+    height: 700px;
+    width: 35%;
+    padding: 4%;
 }
 
 .menu-bars {
     color: cyan;
     margin-left: 2rem;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 200;
     background: none;
 }
 
 .sidenav-menu {
-    background-color: #15023a;
+    background-color: none;
+    width: 80%;
     display: flex;
     justify-content: center;
-    top: 0;
     position: relative;
     transition: 1s;
 }
@@ -35,14 +36,14 @@
 /* sidenav non-active */
 .sidenav-menu-items {
     text-decoration: none;
-    margin-left: -30pt;
+    margin-left: -40pt;
     transition: 0.2s;
     opacity: 0;
 }
 
 /* sidenav active */
 .sidenav-menu-items.active {
-    transition: 3.5s;
+    transition: 3s;
     opacity: 1;
 }
 
@@ -65,7 +66,7 @@
 
 .item-title, .item-icon {
     text-decoration: none;
-    font-size: 20pt;
+    font-size: 18pt;
     font-weight: 350;
     color: cyan;
 }
@@ -100,7 +101,7 @@ Link, .link {
 
     .sidenav.active {
         width: 100%;
-        height: 200px;
+        padding: 8%;
     }
 
     .sidenav-menu {
@@ -110,10 +111,11 @@ Link, .link {
 
     .sidenav-menu-items.active {
         margin-left: -50px;
+        margin-top: -50px;
     }
 
     .item-title {
-        font-size: 14pt;
+        font-size: 15pt;
         
     }
 
