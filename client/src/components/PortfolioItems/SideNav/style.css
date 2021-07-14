@@ -1,7 +1,7 @@
 /* sidenav non-active */
 .sidenav {
     background-color: #15023a;
-    height: 35vh;
+    height: 30vh;
     border-radius: 1px 1px 200px 1px;
     transition: 1s;
     width: 8%;
@@ -12,6 +12,7 @@
 .sidenav.active {
     transition: 1s;
     width: 24%;
+    height: 40vh;
 }
 
 .menu-bars {
