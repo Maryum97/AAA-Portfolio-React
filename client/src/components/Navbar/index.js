@@ -68,7 +68,7 @@ const Navbar = () => {
                 {/* Asad Ansari logo here */}
                 <h1 className='navbar-header'>
                     <a href='/' className='navbar-logo'>
-                        <b style={{ color: 'teal' }}>Asad</b>Ansari
+                        <b style={{ fontWeight: '300' }}>Asad</b>Ansari
                     </a>
                 </h1>
 
