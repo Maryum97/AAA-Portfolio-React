@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import './style.css';
 
 // create object for page transition here, and define variants within
 const pageTransitions = {

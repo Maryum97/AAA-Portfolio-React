@@ -12,6 +12,7 @@
 
 .inner-container {
     border-color: #15023a;
+    min-height: 70vh;
     max-height: 70vh;
     overflow-y: scroll;
     position: relative;
@@ -19,13 +20,14 @@
 
 #business, #philanthropy, #awards {
     /* grid here */
+    margin-top: -150px;
+    margin-bottom: 100px;
     display: grid;
     grid-template-columns: auto 75%;
 }
 
 @media screen and (max-width: 960px) {
     #business, #philanthropy, #awards {
-        margin-top: 100px;
         grid-template-columns: auto;
     }
 }

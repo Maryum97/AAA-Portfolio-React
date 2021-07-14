@@ -8,10 +8,11 @@ import SideNav from './SideNav';
 import Business from './Business';
 import Philanthropy from './Philanthropy';
 import Awards from './Awards';
+import Welcome from './Welcome';
 
 const Portfolio = () => {
     // define states here
-    const [currentComponent, setCurrentComponent] = useState('')
+    const [currentComponent, setCurrentComponent] = useState('Welcome')
 
     // define function to change component state
     const handleComponentChange = (component) => {
@@ -20,6 +21,9 @@ const Portfolio = () => {
 
     // define function to change component
     const renderComponent = () => {
+        if (currentComponent === 'Welcome') {
+            return <Welcome />
+        }
         if (currentComponent === 'Business') {
             return <Business />
         }
@@ -45,6 +49,9 @@ const Portfolio = () => {
                             className='animate-presence'
                         >
                             <Switch>
+                                <Route exact path={'/'} conponent={Welcome}>
+                                    {renderComponent()}
+                                </Route>
                                 <Route exact path={'/'} component={Business}>
                                     {renderComponent()}
                                 </Route>
