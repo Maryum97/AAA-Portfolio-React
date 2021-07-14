@@ -12,4 +12,17 @@
 
 .inner-container {
     border-color: #15023a;
+    /* define grid here, for nav and page to render tidily */
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    column-width: auto;
+}
+
+/* media queries here */
+@media screen and (max-width: 960px) {
+    .inner-container {
+        grid-template-columns: auto;
+        height: 80vh;
+    }
 }
