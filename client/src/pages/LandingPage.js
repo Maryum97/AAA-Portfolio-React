@@ -18,21 +18,6 @@ const LandingPage = () => {
             <div id='portfolio'>
                 <Portfolio />
             </div>
-            <div className='page-header' style={{ marginTop: '100px' }}>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
-            <div className='page-header'>
-                Hello, I'm the landing page!
-            </div>
             <div id='contact'>
                 <Contact />
             </div>
