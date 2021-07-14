@@ -3,14 +3,14 @@
     position: relative;
     background-color: #15023a;
     transition: 1s;
-    width: 8%;
+    width: 15%;
     padding: 1%;
 }
 
 /* sidenav active */
 .sidenav.active {
     transition: 1s;
-    width: 20%;
+    width: 40%;
 }
 
 .menu-bars {
@@ -35,13 +35,13 @@
 .sidenav-menu-items {
     text-decoration: none;
     margin-left: -40pt;
-    transition: 0.5s;
+    transition: 0.2s;
     opacity: 0;
 }
 
 /* sidenav active */
 .sidenav-menu-items.active {
-    transition: 0.5s;
+    transition: 3.5s;
     opacity: 1;
 }
 
@@ -59,20 +59,19 @@
 .sidenav-text:hover {
     text-decoration: none;
     color: white;
-    background-color: rgba(3, 150, 150, 0.411);
     border-radius: 10px;
     transition: all 0.3s ease-out;
 }
 
 .item-title, .item-icon {
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 20pt;
     font-weight: 350;
     color: cyan;
 }
 
 .item-title:hover {
-    color: cyan;
+    color: white;
     transition: all 0.3s ease-out;
 }
 
@@ -92,25 +91,29 @@ Link, .link {
 }
 
 /* media queries here */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
     .sidenav {
-        width: 11%;
+        width: 100%;
+        height: 100px;
     }
 
     .sidenav.active {
-        width: 25%;
+        width: 100%;
+        height: 200px;
+    }
+
+    .sidenav-menu {
+        width: 100%;
+        height: 40px;
     }
 
     .sidenav-menu-items.active {
-        margin-left: -30px;
+        margin-left: -250px;
     }
 
     .item-title {
         font-size: 14pt;
-    }
-
-    .item-icon {
-        display: none;
+        
     }
 
     .fa-bars, .fa-times {
