@@ -85,6 +85,11 @@ Link, .link {
     text-decoration: none;
 }
 
+Link:hover, .link:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .fa-bars, .fa-times {
     font-size: 20pt;
     font-weight: 400;
