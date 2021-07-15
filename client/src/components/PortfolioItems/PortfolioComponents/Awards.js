@@ -26,14 +26,21 @@ const Awards = () => {
             id='awards'
         >
             <div className='empty'></div>
+            <Confetti
+                width={width}
+                height={height*3}
+                numberOfPieces={400}
+                gravity={0.2}
+            >
+                
+            </Confetti>
             <div className='content'>
                 <h1 className='header'>Awards</h1>
-                <Confetti
-                    width={width}
-                    height={height}
-                    numberOfPieces={350}
-                    gravity={0.2}
-                ></Confetti>
+                <h2
+                    style={{ marginTop: '500px' }}
+                >
+                    Asians In Tech Award 2020
+                </h2>
             </div>
         </motion.div>
     )
