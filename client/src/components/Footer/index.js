@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
 import './style.css';
 
 // import contact icons here
@@ -7,55 +8,92 @@ import Twitter from '../../assets/SocialMediaLinks/twitter.png';
 import Instagram from '../../assets/SocialMediaLinks/instagram.png';
 import LinkedIn from '../../assets/SocialMediaLinks/linkedin.png';
 
+// import aos dependencies here
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 // define styles here
 const myStyles = {
     icon: {
-        height: '36px'
+        height: '40px'
     }
 }
 
 const Footer = () => {
+    // initialise aos
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, []);
+
     return (
         <div className='footer'>
             <div className='footer-container'>
                 <div className='social-medias'>
                     <a href='https://www.facebook.com/asadans4ri' target='_blank'>
-                        <img
+                        <motion.img
+                            whileHover={{
+                                scale: 1.23
+                            }}
                             src={Facebook}
                             className='img-fluid'
                             style={myStyles.icon}
+                            data-aos='zoom-in'
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
                         >
-                        </img>
+                        </motion.img>
                     </a>
                     <span>  </span>
                     <span>  </span>
                     <a href='https://www.instagram.com/asadans4ri/' target='_blank'>
-                        <img
+                        <motion.img
+                            whileHover={{
+                                scale: 1.23
+                            }}
                             src={Instagram}
                             className='img-fluid'
                             style={myStyles.icon}
+                            data-aos='zoom-in'
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
                         >
-                        </img>
+                        </motion.img>
                     </a>
                     <span>  </span>
                     <span>  </span>
                     <a href='https://twitter.com/asadans4ri' target='_blank'>
-                        <img
+                        <motion.img
+                            whileHover={{
+                                scale: 1.23
+                            }}
                             src={Twitter}
                             className='img-fluid'
                             style={myStyles.icon}
+                            data-aos='zoom-in'
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
                         >
-                        </img>
+                        </motion.img>
                     </a>
                     <span>  </span>
                     <span>  </span>
                     <a href='https://www.linkedin.com/in/asadansari1/' target='_blank'>
-                        <img
+                        <motion.img
+                            whileHover={{
+                                scale: 1.23
+                            }}
                             src={LinkedIn}
                             className='img-fluid'
                             style={myStyles.icon}
+                            data-aos='zoom-in'
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
                         >
-                        </img>
+                        </motion.img>
                     </a>
                 </div>
             </div>
@@ -64,7 +102,7 @@ const Footer = () => {
                     © Copyright Asad Ansari 2021
                 </div>
                 <div className='back-to-top'>
-                    <a>Back To Top</a>
+                    <a className='back-to-top' href='#landing-page'>Back To Top</a>
                 </div>
             </footer>
         </div>

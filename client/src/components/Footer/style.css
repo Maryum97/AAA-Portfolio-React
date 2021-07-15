@@ -29,6 +29,16 @@ footer {
     margin-bottom: 30pt;
 }
 
+.back-to-top {
+    text-decoration: none;
+    color: cyan;
+}
+
+.back-to-top:hover {
+    text-decoration: none;
+    color: white;
+}
+
 @media screen and (max-width: 1220px) {
 
     .footer-container {
