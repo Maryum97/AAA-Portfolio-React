@@ -5,14 +5,14 @@ import './styleComponents.css';
 // create object for page transition here, and define variants within
 const pageTransitions = {
     in: {
-        opacity: 1
+        opacity: [0, 1]
     },
     out: {
         opacity: 0
     }
 }
 
-function Philanthropy() {
+const Philanthropy = () => {
     return (
         <motion.div
             initial='out'
