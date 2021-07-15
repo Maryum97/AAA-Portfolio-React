@@ -8,7 +8,7 @@ import { SideNavData } from './SideNavData';
 // define styles here
 const myStyles = {
     sideNav: {
-        zIndex: '1',
+        zIndex: '90',
         position: 'sticky',
         top: 0
     }

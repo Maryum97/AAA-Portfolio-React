@@ -7,7 +7,7 @@ import { MenuItems } from './MenuItems';
 // define styles here
 const myStyles = {
     navbar: {
-        zIndex: '1',
+        zIndex: '99',
         position: 'fixed',
         marginTop: '-8px'
     }
