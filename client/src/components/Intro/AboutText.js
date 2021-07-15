@@ -30,7 +30,7 @@ const AboutText = () => {
                 <TextTransition
                     text={TEXTS[index % TEXTS.length]}
                     springConfig={presets.wobbly}
-                    delay='2500'
+                    delay='2000'
                 />
             </p>
         </div>

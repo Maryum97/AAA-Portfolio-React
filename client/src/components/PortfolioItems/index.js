@@ -5,10 +5,10 @@ import './style.css';
 
 // import other components here
 import SideNav from './SideNav';
-import Business from './Business';
-import Philanthropy from './Philanthropy';
-import Awards from './Awards';
-import Welcome from './Welcome';
+import Business from './PortfolioComponents/Business';
+import Philanthropy from './PortfolioComponents/Philanthropy';
+import Awards from './PortfolioComponents/Awards';
+import Welcome from './PortfolioComponents/Welcome';
 
 const Portfolio = () => {
     // define states here
