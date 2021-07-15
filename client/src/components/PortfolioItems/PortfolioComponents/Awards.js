@@ -37,7 +37,7 @@ const Awards = () => {
             <div className='content'>
                 <h1 className='header'>Awards</h1>
                 <h2
-                    style={{ marginTop: '500px' }}
+                    style={{ marginTop: '700px' }}
                 >
                     Asians In Tech Award 2020
                 </h2>

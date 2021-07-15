@@ -3,13 +3,16 @@
     font-size: 60pt;
     font-weight: 700;
     margin-top: 60px;
-    color: teal;
+    color: white;
 }
 
 #business, #philanthropy, #awards {
     /* grid here */
+    color: white;
     text-align: center;
-    margin-top: -150px;
+    margin-top: -350px;
+    margin-right: 20px;
+    padding-top: 200px;
     margin-bottom: 500px;
     display: grid;
     grid-template-columns: auto 85%;
@@ -28,7 +31,7 @@
 }
 
 .fa-chevron-double-up {
-    color: teal;
+    color: #15023a;
     font-size: 45pt;
     margin-left: 20px;
 }
