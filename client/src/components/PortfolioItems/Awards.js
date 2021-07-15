@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import useWindowSize from 'react-use/lib/useWindowSize';
+import Confetti from 'react-confetti';
 import './styleComponents.css';
 
 // create object for page transition here, and define variants within
@@ -13,6 +15,8 @@ const pageTransitions = {
 }
 
 function Awards() {
+    const { width, height } = useWindowSize();
+
     return (
         <motion.div
             initial='out'
@@ -23,26 +27,13 @@ function Awards() {
         >
             <div className='empty'></div>
             <div className='content'>
-                <h1>Awards here</h1>
-
-                <div className='page-header' style={{ marginTop: '100px' }}>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
+                <h1 className='header'>Awards</h1>
+                <Confetti
+                    width={width}
+                    height={height}
+                    numberOfPieces={350}
+                    gravity={0.2}
+                ></Confetti>
             </div>
         </motion.div>
     )

@@ -13,6 +13,12 @@
     grid-template-columns: auto 75%;
 }
 
+.header {
+    text-align: center;
+    margin-right: 300px;
+    font-size: 40pt;
+}
+
 @media screen and (max-width: 960px) {
     .welcome-msg {
         font-size: 50pt;
@@ -21,5 +27,14 @@
 
     #business, #philanthropy, #awards {
         grid-template-columns: auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .header {
+        font-size: 50pt;
+        margin-top: -50px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

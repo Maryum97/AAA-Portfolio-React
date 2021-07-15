@@ -23,26 +23,7 @@ function Philanthropy() {
         >
             <div className='empty'></div>
             <div className='content'>
-                <h1>Philanthropy here</h1>
-
-                <div className='page-header' style={{ marginTop: '100px' }}>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
+                <h1 className='header'>Philanthropy</h1>
             </div>
         </motion.div>
     )

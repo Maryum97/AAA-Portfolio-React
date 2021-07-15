@@ -23,26 +23,7 @@ function Business() {
         >
             <div className='empty'></div>
             <div className='content'>
-                <h1>Business here</h1>
-
-                <div className='page-header' style={{ marginTop: '100px' }}>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
-                <div className='page-header'>
-                    Hello, I'm the landing page!
-                </div>
+                <h1 className='header'>Business</h1>
             </div>
         </motion.div>
     )
