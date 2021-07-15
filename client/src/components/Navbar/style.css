@@ -1,5 +1,7 @@
 /* Navbar itself, as a whole */
 .navbar {
+    position: sticky;
+    top: 0;
     width: 105%;
     height: 120px;
     display: flex;
