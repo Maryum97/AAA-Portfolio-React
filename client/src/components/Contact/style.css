@@ -1,8 +1,42 @@
 .contact {
     padding: 4%;
 }
+
+@media screen and (max-width: 1420px) {
+    .contact {
+        height: 1000px;
+    }    
+}
     
 .contact-container {
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.contact-items {
+    padding: 3%;
+    border-color: #15023a;
+    background-color: rgba(128, 128, 128, 0.404);
+}
+
+.user-email, .user-message {
+    font-size: 18pt;
+    padding: 0.6%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-message {
+    height: 20vh;
+}
+
+.send-btn {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    font-size: 20pt;
+    color: white;
+    background-color: teal;
 }
