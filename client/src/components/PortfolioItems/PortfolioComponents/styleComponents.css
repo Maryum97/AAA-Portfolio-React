@@ -8,10 +8,11 @@
 
 #business, #philanthropy, #awards {
     /* grid here */
+    text-align: center;
     margin-top: -150px;
-    margin-bottom: 100px;
+    margin-bottom: 500px;
     display: grid;
-    grid-template-columns: auto 75%;
+    grid-template-columns: auto 85%;
 }
 
 #welcome {
@@ -23,8 +24,7 @@
 
 .header {
     text-align: center;
-    margin-right: 300px;
-    font-size: 40pt;
+    font-size: 50pt;
 }
 
 .fa-chevron-double-up {
@@ -46,7 +46,7 @@
     }
 
     .header {
-        font-size: 50pt;
+        font-size: 40pt;
         margin-top: -50px;
         margin-left: auto;
         margin-right: auto;
