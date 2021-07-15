@@ -1,5 +1,5 @@
 .welcome-msg {
-    text-align: center;
+    text-align: auto;
     font-size: 60pt;
     font-weight: 700;
     margin-top: 60px;
@@ -14,6 +14,13 @@
     grid-template-columns: auto 75%;
 }
 
+#welcome {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .header {
     text-align: center;
     margin-right: 300px;
@@ -23,17 +30,8 @@
 .fa-chevron-double-up {
     color: teal;
     font-size: 45pt;
-    animation: MoveUpDown 1s linear infinite;
+    margin-left: 20px;
 }
-
-@keyframes MoveUpDown {
-    0%, 100% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 100px;
-    }
-  }
 
 @media screen and (max-width: 960px) {
     .welcome-msg {
@@ -41,7 +39,7 @@
         margin-top: 100pt;
     }
 
-    #business, #philanthropy, #awards {
+    #welcome, #business, #philanthropy, #awards {
         grid-template-columns: auto;
         margin-top: 50px;
         text-align: center;
