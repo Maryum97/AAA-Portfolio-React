@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css';
 
 // import menu-items here as a separate component
@@ -27,6 +27,12 @@ const Navbar = () => {
 
     // DEFINE FUNCTIONS HERE
 
+    useEffect(() => {
+        // change color ON SCROLL
+        window.addEventListener('scroll', changeNavbarColor);
+        window.addEventListener('scroll', changeMenuColor);
+    })
+
     // function to handle click event for fa-icons 
     const handleClick = () => {
         setClicked(!clicked);
@@ -53,10 +59,6 @@ const Navbar = () => {
             setMenu(false);
         }
     }
-
-    // change color ON SCROLL
-    window.addEventListener('scroll', changeNavbarColor);
-    window.addEventListener('scroll', changeMenuColor);
 
     return (
         // Navbar starts here
