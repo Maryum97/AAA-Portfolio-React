@@ -2,39 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './styleComponents.css';
 
-// import images here
-import Logo1 from '../../../assets/Business/WhiteRiskIntel.png';
-import Logo2 from '../../../assets/Business/WhiteMayfair.png';
-import Logo3 from '../../../assets/Business/WhiteAccrediNation.png';
-
-// define css here
-const myStyle = {
-    style1: {
-        display: 'block',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        width: '200px',
-        height: '43px',
-        marginTop: '700px'
-    },
-
-    style2: {
-        display: 'block',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        width: '290px',
-        height: '110px',
-        marginTop: '740px'
-    },
-    style3: {
-        display: 'block',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        width: '300px',
-        height: '75px',
-        marginTop: '700px'
-    }
-}
+// import other components here
+import BusinessCarousel from '../../BusinessCarousel';
 
 // create object for page transition here, and define variants within
 const pageTransitions = {
@@ -56,36 +25,18 @@ const Business = () => {
             id='business'
         >
             <div className='empty'></div>
+
+            {/* Content here */}
             <div className='content'>
+
+                {/* Animations applied here, to animate elements on scroll */}
                 <h1 className='header'>Business</h1>
                 <p
-                    style={{ fontSize: '17pt', marginTop: '700px' }}
+                    style={{ fontSize: '17pt', marginTop: '700px', marginBottom: ' 700px' }}
                 >
                     Asad is the Founder and Managing Director of the following organisations:
                 </p>
-                <img
-                    src={Logo1}
-                    style={myStyle.style1}
-                    className="img-fluid"
-                >
-
-                </img>
-
-                <img
-                    src={Logo2}
-                    style={myStyle.style2}
-                    className="img-fluid"
-                >
-
-                </img>
-
-                <img
-                    src={Logo3}
-                    style={myStyle.style3}
-                    className="img-fluid"
-                >
-
-                </img>
+                <BusinessCarousel />
                 <p
                     style={{ fontSize: '17pt', marginTop: '700px' }}
                 >
