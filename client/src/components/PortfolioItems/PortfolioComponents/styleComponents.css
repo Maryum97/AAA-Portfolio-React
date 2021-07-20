@@ -27,7 +27,7 @@
 
 .header {
     text-align: center;
-    font-size: 50pt;
+    font-size: 70pt;
 }
 
 .fa-chevron-double-up {
@@ -44,7 +44,7 @@
 
     #welcome, #business, #philanthropy, #awards {
         grid-template-columns: auto;
-        margin-top: 50px;
+        margin-top: 120px;
         text-align: center;
     }
 
