@@ -7,17 +7,34 @@ const Contact = () => {
             <div className='contact-container'>
                 <h1 style={{ textAlign: 'center' }}>Feel free to get in touch with Asad:</h1>
                 <br></br>
-                <div className='contact-items card'>
-                    <input type='email' className='user-email' placeholder='Your email...'></input>
+                <form className='contact-items card'>
+                    <input
+                        type='text'
+                        className='user-name'
+                        placeholder='Your full name...'
+                        required
+                    ></input>
                     <br></br>
-                    <textarea className='user-message' placeholder='Leave a message...'></textarea>
+                    <input
+                        type='email'
+                        className='user-email'
+                        placeholder='Your email...'
+                        required
+                    ></input>
+                    <br></br>
+                    <textarea
+                        type='textarea'
+                        className='user-message'
+                        placeholder='Leave a message...'
+                        required
+                    ></textarea>
                     <br></br>
                     <button
                         className='send-btn'
                     >
                         Send
                     </button>
-                </div>
+                </form>
             </div>
         </div>
     )
