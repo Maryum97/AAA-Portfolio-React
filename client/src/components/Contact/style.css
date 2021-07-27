@@ -41,8 +41,6 @@
     padding: 1%;
     font-size: 20pt;
     color: white;
-    background-color: teal;
-    border-color: teal;
     transition: 0.5s;
     box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 2px 20px 0 rgba(0,0,0,0.19);
 }
@@ -50,7 +48,46 @@
 .send-btn:hover {
     transition: 0.6s;
     margin-left: 41%;
-    margin-top: 1%;
+}
+
+/* Modal styles start here */
+.modal-background {
+    text-align: center;
+    padding: 10%;
+    background-color: rgba(0, 0, 0, 0.363);
+    margin-top: -500px;
+}
+
+.modal-box {
+    text-align: center;
+    background-color: darkblue;
+    padding: 1%;
+    border-radius: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-interior {
+    background-color: white;
+    border-radius: 20px;
+    padding: 4%;
+}
+
+.modal-title {
+    font-size: 30pt;
+    font-weight: 650;
+}
+
+.modal-text {
+    font-size: 20pt;
+    margin-top: 20px;
+}
+
+.close-btn {
+    padding: 2%;
+    width: 50%;
+    font-size: 16pt;
 }
 
 @media screen and (max-width: 960px) {
