@@ -21,7 +21,7 @@
     background-color: rgba(187, 187, 187, 0.404);
 }
 
-.user-email, .user-message {
+.user-name, .user-email, .user-message {
     font-size: 18pt;
     padding: 0.6%;
     width: 90%;
