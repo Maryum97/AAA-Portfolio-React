@@ -2,15 +2,6 @@ import React, { useState } from 'react';
 import * as emailjs from 'emailjs-com';
 import './style.css';
 
-// define styles here
-const myStyles = {
-    modal: {
-        zIndex: '75',
-        position: 'sticky',
-        top: 0
-    }
-}
-
 const Contact = () => {
     // define states here
     // 1. states for name, email and message
@@ -53,7 +44,7 @@ const Contact = () => {
             'user_IfPLcN0kuGQtkG0iT1Jzr'
         ).then(() => {
             setSuccessMsg(
-                <div className='modal-background' style={myStyles.modal}>
+                <div className='modal-background'>
                     <div className='modal-box'>
                         <div className='modal-interior'>
                             <div className='modal-title'>
