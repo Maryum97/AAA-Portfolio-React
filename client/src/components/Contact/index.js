@@ -1,8 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import * as emailjs from 'emailjs-com';
 import './style.css';
 
+// aos dependencies
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const Contact = () => {
+    // initialise aos
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, []);
+
     // define states here
     // 1. states for name, email and message
     const [variables, setVariables] = useState({
@@ -44,8 +53,22 @@ const Contact = () => {
             'user_IfPLcN0kuGQtkG0iT1Jzr'
         ).then(() => {
             setSuccessMsg(
-                <div className='modal-background'>
-                    <div className='modal-box'>
+                <div
+                    className='modal-background'
+                    data-aos='fade-in'
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    data-aos-delay="100"
+                >
+                    <div
+                        className='modal-box'
+                        data-aos='zoom-in'
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="true"
+                        data-aos-delay="600"
+                    >
                         <div className='modal-interior'>
                             <div className='modal-title'>
                                 Message sent!
