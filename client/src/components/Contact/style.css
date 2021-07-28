@@ -54,7 +54,7 @@
 .modal-background {
     text-align: center;
     padding: 10%;
-    background-color: rgba(0, 0, 0, 0.459);
+    background-color: rgba(0, 0, 0, 0.527);
     margin-top: -500px;
     z-index: 100;
     position: fixed;
@@ -67,7 +67,7 @@
 
 .modal-box {
     text-align: center;
-    background-color: darkblue;
+    background-color: #10127e;
     padding: 1%;
     border-radius: 20px;
     width: 60%;
@@ -96,6 +96,7 @@
     padding: 2%;
     width: 50%;
     font-size: 16pt;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 960px) {
