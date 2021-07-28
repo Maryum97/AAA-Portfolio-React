@@ -17,13 +17,13 @@ const Navbar = () => {
     // DEFINE STATES HERE
 
     // states for fa-icons
-    const [clicked, setClicked] = useState(false)
+    const [clicked, setClicked] = useState(false);
 
     // states for navbar color-change
-    const [navbar, setNavbar] = useState(false)
+    const [navbar, setNavbar] = useState(false);
 
     // states for menu color-change
-    const [menu, setMenu] = useState(false)
+    const [menu, setMenu] = useState(false);
 
     // DEFINE FUNCTIONS HERE
 
