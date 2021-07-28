@@ -14,6 +14,16 @@ const Business = () => {
             <h2>Hey, this is business!</h2>
             <h2>Hey, this is business!</h2>
             <h2>Hey, this is business!</h2>
+            <h2>Hey, this is business!</h2>
+            <h2>Hey, this is business!</h2>
+            <h2>Hey, this is business!</h2>
+            <h2>Hey, this is business!</h2>
+            <h2>Hey, this is business!</h2>
+            <h2>Hey, this is business!</h2>
+            <h2>Hey, this is business!</h2>
+            <h2>Hey, this is business!</h2>
+            <h2>Hey, this is business!</h2>
+            <h2>Hey, this is business!</h2>
         </div>
     )
 }

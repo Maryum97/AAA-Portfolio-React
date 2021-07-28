@@ -14,6 +14,16 @@ const Awards = () => {
             <h2>Hey, this is awards!</h2>
             <h2>Hey, this is awards!</h2>
             <h2>Hey, this is awards!</h2>
+            <h2>Hey, this is awards!</h2>
+            <h2>Hey, this is awards!</h2>
+            <h2>Hey, this is awards!</h2>
+            <h2>Hey, this is awards!</h2>
+            <h2>Hey, this is awards!</h2>
+            <h2>Hey, this is awards!</h2>
+            <h2>Hey, this is awards!</h2>
+            <h2>Hey, this is awards!</h2>
+            <h2>Hey, this is awards!</h2>
+            <h2>Hey, this is awards!</h2>
         </div>
     )
 }
