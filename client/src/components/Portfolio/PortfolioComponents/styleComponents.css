@@ -32,12 +32,12 @@
 .bus-header, .phil-header, .awards-header {
     position: -webkit-sticky;
     position: sticky;
-    top: 27%;
+    top: 20%;
     text-align: center;
     font-size: 45pt;
     font-weight: 700;
-    height: 200px;
-    padding-top: 50px;
+    height: 220px;
+    padding-top: 60px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -46,7 +46,7 @@
     }
 
     .bus-header, .phil-header, .awards-header {
-        top: 20%;
+        top: 18%;
     }
 }
 
@@ -62,8 +62,8 @@
 
     .bus-header, .phil-header, .awards-header {
         font-size: 35pt;
-        padding-top: 40px;
-        top: 18%;
+        padding-top: 50px;
+        top: 20%;
         height: 130px;
     }
 }
