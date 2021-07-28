@@ -31,7 +31,7 @@ const Navbar = () => {
                             >
                                 <a
                                     className={item.cName}
-                                    href={item.url}
+                                    href={item.path}
                                 >
                                     {item.title}
                                 </a>
