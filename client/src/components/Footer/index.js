@@ -8,10 +8,6 @@ import Twitter from '../../assets/SocialMediaLinks/twitter.png';
 import Instagram from '../../assets/SocialMediaLinks/instagram.png';
 import LinkedIn from '../../assets/SocialMediaLinks/linkedin.png';
 
-// import aos dependencies here
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-
 // define styles here
 const myStyles = {
     icon: {
@@ -20,10 +16,6 @@ const myStyles = {
 }
 
 const Footer = () => {
-    // initialise aos
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, []);
 
     return (
         <div className='footer'>
@@ -37,10 +29,6 @@ const Footer = () => {
                             src={Facebook}
                             className='img-fluid'
                             style={myStyles.icon}
-                            data-aos='zoom-in'
-                            data-aos-easing="ease-in-out"
-                            data-aos-mirror="true"
-                            data-aos-once="false"
                         >
                         </motion.img>
                     </a>
@@ -54,10 +42,6 @@ const Footer = () => {
                             src={Instagram}
                             className='img-fluid'
                             style={myStyles.icon}
-                            data-aos='zoom-in'
-                            data-aos-easing="ease-in-out"
-                            data-aos-mirror="true"
-                            data-aos-once="false"
                         >
                         </motion.img>
                     </a>
@@ -71,10 +55,6 @@ const Footer = () => {
                             src={Twitter}
                             className='img-fluid'
                             style={myStyles.icon}
-                            data-aos='zoom-in'
-                            data-aos-easing="ease-in-out"
-                            data-aos-mirror="true"
-                            data-aos-once="false"
                         >
                         </motion.img>
                     </a>
@@ -88,10 +68,6 @@ const Footer = () => {
                             src={LinkedIn}
                             className='img-fluid'
                             style={myStyles.icon}
-                            data-aos='zoom-in'
-                            data-aos-easing="ease-in-out"
-                            data-aos-mirror="true"
-                            data-aos-once="false"
                         >
                         </motion.img>
                     </a>
