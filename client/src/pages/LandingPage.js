@@ -4,7 +4,7 @@ import './style.css';
 // import components here
 import Navbar from '../components/Navbar';
 import Intro from '../components/Intro';
-import Portfolio from '../components/PortfolioItems';
+import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
