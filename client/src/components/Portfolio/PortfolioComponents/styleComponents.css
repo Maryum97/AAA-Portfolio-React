@@ -11,6 +11,34 @@
     max-height: 1000px;
 }
 
+#business, #philanthropy, #awards {
+    padding: 3%;
+    color: white;
+    text-align: center;
+}
+
+#business, .bus-header {
+    background-color: maroon;
+}
+
+#philanthropy, .phil-header {
+    background-color: orangered;
+}
+
+#awards, .awards-header {
+    background-color: orange;
+}
+
+.bus-header, .phil-header, .awards-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+    padding: 1%;
+    text-align: center;
+    font-size: 45pt;
+    font-weight: 700;
+}
+
 @media screen and (max-width: 1250px) {
     #welcome {
         max-height: 1000px;
@@ -25,5 +53,11 @@
 
     #welcome {
         max-height: 800px;
+    }
+
+    .bus-header, .phil-header, .awards-header {
+        font-size: 35pt;
+        padding: 2%;
+        top: 22%;
     }
 }
