@@ -7,7 +7,63 @@
     display: flex;
     background-color: #15023a;
     width: 100%;
-    padding: 3%;
+    padding: 1%;
     font-size: 20px;
     color: cyan;
+    text-align: center;
+}
+
+.port-nav-container {
+    width: 100%;
+}
+
+.port-nav-menu {
+    list-style-type: none;
+    background-color: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: 1s;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 200;
+    text-align: center;
+    background: none;
+}
+
+.port-nav-menu-item {
+    padding: 2%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    transition: 1s;
+}
+
+.port-nav-menu-item:hover {
+    background-color: rgba(3, 150, 150, 0.411);
+    border-radius: 10px;
+}
+
+.port-nav-menu-item:active {
+    color: cyan;
+}
+
+.port-nav-menu-icon {
+    display: none;
+}
+
+.port-nav-text {
+    color: cyan;
+    text-decoration: none;
+}
+
+.port-nav-text:hover {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 960px) {
+    .port-nav-menu-icon {
+        display: block;
+    }
 }

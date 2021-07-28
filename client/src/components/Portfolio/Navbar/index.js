@@ -1,11 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css'
 
+// import nav data here
+import { NavData } from './NavData';
+
 function Navbar() {
+    // DEFINE STATES HERE
+
+    // states for fa-icons
+    const [clicked, setClicked] = useState(false)
+
+    // function to handle click event for fa-icons 
+    const handleClick = () => {
+        setClicked(!clicked);
+    }
+
     return (
         <div className='portfolio-navbar'>
-            <nav>
-                <div>Hi, I'm supposed to be the navbar...</div>
+            <nav className='port-nav-container'>
+                {/* Nav-menu and nav-items here */}
+                <div className='port-nav-menu-icon' onClick={handleClick}>
+                    <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                </div>
+                <ul className={clicked ? 'port-nav-menu active' : 'port-nav-menu'}>
+                    {NavData.map((item, index) => {
+                        return (
+                            <li
+                                className='port-nav-menu-item'
+                                key={index}
+                            >
+                                <a
+                                    className={item.cName}
+                                    href={item.url}
+                                >
+                                    {item.title}
+                                </a>
+                            </li>
+                        )
+                    })}
+                </ul>
             </nav>
         </div>
     )
