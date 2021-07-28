@@ -55,6 +55,8 @@
 .port-nav-text {
     color: cyan;
     text-decoration: none;
+    font-size: 18pt;
+    font-weight: 600;
 }
 
 .port-nav-text:hover {
@@ -62,8 +64,43 @@
     color: white;
 }
 
+/* media queries here */
+
 @media screen and (max-width: 960px) {
+    .portfolio-navbar {
+        top: 10%;
+        padding: 2.5%;
+        height: 90px;
+        transition: 1s;
+    }
+
+    .portfolio-navbar.active {
+        height: 130px;
+    }
+
     .port-nav-menu-icon {
         display: block;
+        margin-left: -86vw;
+        margin-top: 22px;
+        position: relative;
+    }
+
+    .port-nav-menu-item {
+        margin-left: 4vw;
+        margin-right: 5vw;
+    }
+
+    .port-nav-menu {
+        opacity: 0;
+        transition: 0.7s;
+    }
+
+    .port-nav-menu.active {
+        opacity: 1;
+        transition: 2.3s;
+    }
+
+    .port-nav-text {
+        font-size: 12pt;
     }
 }

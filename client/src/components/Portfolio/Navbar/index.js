@@ -8,7 +8,7 @@ function Navbar() {
     // DEFINE STATES HERE
 
     // states for fa-icons
-    const [clicked, setClicked] = useState(false)
+    const [clicked, setClicked] = useState(false);
 
     // function to handle click event for fa-icons 
     const handleClick = () => {
@@ -16,11 +16,11 @@ function Navbar() {
     }
 
     return (
-        <div className='portfolio-navbar'>
+        <div className={clicked ? 'portfolio-navbar active' : 'portfolio-navbar'}>
             <nav className='port-nav-container'>
                 {/* Nav-menu and nav-items here */}
                 <div className='port-nav-menu-icon' onClick={handleClick}>
-                    <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                    <i className={clicked ? 'fas fa-times' : 'fas fa-eye'}></i>
                 </div>
                 <ul className={clicked ? 'port-nav-menu active' : 'port-nav-menu'}>
                     {NavData.map((item, index) => {
