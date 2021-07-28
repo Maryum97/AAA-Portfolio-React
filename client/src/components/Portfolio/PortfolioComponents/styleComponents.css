@@ -7,9 +7,23 @@
     color: white;
 }
 
+#welcome {
+    max-height: 1000px;
+}
+
+@media screen and (max-width: 1250px) {
+    #welcome {
+        max-height: 1000px;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .welcome-msg {
         font-size: 40pt;
         margin-top: 160pt;
+    }
+
+    #welcome {
+        max-height: 800px;
     }
 }

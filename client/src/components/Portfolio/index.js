@@ -4,6 +4,9 @@ import './style.css';
 // import components here
 import Navbar from './Navbar';
 import Welcome from './PortfolioComponents/Welcome';
+import Business from './PortfolioComponents/Business';
+import Philanthropy from './PortfolioComponents/Philanthropy';
+import Awards from './PortfolioComponents/Awards';
 
 const Portfolio = () => {
     return (
@@ -18,13 +21,12 @@ const Portfolio = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-                <h1>Hi, this is the portfolio section!</h1>
-                <h1>Hi, this is the portfolio section!</h1>
-                <h1>Hi, this is the portfolio section!</h1>
-                <h1>Hi, this is the portfolio section!</h1>
-                <h1>Hi, this is the portfolio section!</h1>
-                <h1>Hi, this is the portfolio section!</h1>
-                <h1>Hi, this is the portfolio section!</h1>
+                <Business />
+                <br></br>
+                <Philanthropy />
+                <br></br>
+                <Awards />
+                <br></br>
             </div>
         </>
     )

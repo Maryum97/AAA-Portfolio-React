@@ -4,7 +4,7 @@ import './style.css'
 // import nav data here
 import { NavData } from './NavData';
 
-function Navbar() {
+const Navbar = () => {
     // DEFINE STATES HERE
 
     // states for fa-icons
