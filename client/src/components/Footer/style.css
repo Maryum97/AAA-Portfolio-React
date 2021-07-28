@@ -26,7 +26,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding: 2%;
-    margin-bottom: 30pt;
 }
 
 .back-to-top {
@@ -54,5 +53,6 @@ footer {
     .social-medias {
         width: 80%;
         font-size: 30pt;
+        margin-top: -15pt;
     }
 }
