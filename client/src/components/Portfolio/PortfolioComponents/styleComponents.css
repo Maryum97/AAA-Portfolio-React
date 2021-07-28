@@ -1,0 +1,15 @@
+.welcome-msg {
+    text-align: auto;
+    font-size: 70pt;
+    font-weight: 700;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    color: white;
+}
+
+@media screen and (max-width: 960px) {
+    .welcome-msg {
+        font-size: 30pt;
+        margin-top: 100pt;
+    }
+}
