@@ -118,4 +118,20 @@
         width: 30%;
         margin-left: 35%;
     }
+
+    .modal-box {
+        margin-top: -30px;
+        width: 90%;
+    }
+
+    .modal-title {
+        font-size: 25pt;
+    }
+    
+    .modal-text {
+        font-size: 15pt;
+        margin-top: 20px;
+    }
+
+
 }
