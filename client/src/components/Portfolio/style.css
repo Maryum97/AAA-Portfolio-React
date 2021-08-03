@@ -1,5 +1,5 @@
 .portfolio {
     padding: 4%;
-    background-image: linear-gradient(to left, rgba(76, 0, 130, 0.801), rgba(0, 0, 255, 0.801), rgba(0, 128, 0, 0.801), rgba(255, 255, 0, 0.801));
+    background-image: linear-gradient(to right, rgba(76, 0, 130, 0.9), rgba(0, 0, 255, 0.9), rgba(0, 128, 0, 0.9), rgba(255, 255, 0, 0.9));
     margin-bottom: 200px;
 }
