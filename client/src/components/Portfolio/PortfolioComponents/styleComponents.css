@@ -21,6 +21,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 20%;
+    z-index: 10;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), blue, green, rgba(0, 0, 0, 0));
     width: 70%;
     margin-left: auto;
@@ -48,10 +49,6 @@
 }
 
 /* PHILANTHROPY ITEMS HERE */
-
-/*  grid items for quotation here */
-
-
 
 .quotation {
     margin-top: 500px;

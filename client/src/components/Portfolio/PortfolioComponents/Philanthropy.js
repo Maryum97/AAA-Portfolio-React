@@ -5,7 +5,10 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 // import images here
-import PhilQuotImage from '../../../assets/Philanthropy/Screenshot_20210524-180312_Instagram.jpg'
+import PhilQuotImage from '../../../assets/Philanthropy/Screenshot_20210524-180312_Instagram.jpg';
+
+// import other components here 
+import PhilanthropyCard from '../../PhilanthropyCard';
 
 const Philanthropy = () => {
     // initialise aos
@@ -60,6 +63,8 @@ const Philanthropy = () => {
                     </p>
                 </div>
             </div>
+            <br></br>
+            <PhilanthropyCard />
             <br></br>
         </div>
     )
