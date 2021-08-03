@@ -1,0 +1,50 @@
+.phil-card-grid {
+    /* define grid for phil-cards here */
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px;
+    transition: 1s;
+}
+
+@media screen and (max-width: 1260px) {
+    .phil-card-grid {
+        grid-template-columns: 50% 50%;
+    }    
+}
+
+@media screen and (max-width: 960px) {
+    .phil-card-grid {
+        grid-template-columns: auto;
+    }  
+    
+    .phil-card {
+        margin-top: 400px;
+        margin-bottom: 400px;
+    }
+}
+
+.phil-card {
+    background-color: white;
+    padding: 3%;
+    margin-top: 20px;
+    color: #15023a;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+.phil-card-logo {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.phil-card-title {
+    padding: 2%;
+    font-weight: 700;
+    font-size: 25pt;
+}
+
+.phil-card-description {
+    font-size: 16pt;
+    margin-top: 20px;
+}
