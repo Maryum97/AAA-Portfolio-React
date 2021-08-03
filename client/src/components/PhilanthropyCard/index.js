@@ -16,7 +16,7 @@ function PhilanthropyCard() {
                             >
                                 <div>
                                     <img
-                                        scr={data.logo}
+                                        scr={data.src}
                                     >
                                     </img>
                                 </div>
