@@ -32,8 +32,19 @@
     font-weight: 700;
 }
 
+/* BUSINESS ITEMS HERE */
+
+.bus-para {
+    font-size: 20pt;
+}
+
 .bus-logo {
     max-width: 70%;
+}
+
+.bus-para, .bus-logo {
+    margin-top: 400px;
+    margin-bottom: 400px;
 }
 
 @media screen and (max-width: 1250px) {
