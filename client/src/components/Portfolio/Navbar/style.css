@@ -11,6 +11,12 @@
     font-size: 20px;
     color: cyan;
     text-align: center;
+    height: 80px;
+    transition: 1s;
+}
+
+.portfolio-navbar.active {
+    height: 122px;
 }
 
 .port-nav-container {
@@ -27,9 +33,17 @@
     transition: 1s;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -15px;
     font-weight: 200;
     text-align: center;
     background: none;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.port-nav-menu.active {
+    opacity: 1;
+    transition: 2.3s;
 }
 
 .port-nav-menu-item {
@@ -49,7 +63,10 @@
 }
 
 .port-nav-menu-icon {
-    display: none;
+    display: block;
+    margin-left: -86vw;
+    margin-top: 10px;
+    position: relative;
 }
 
 .port-nav-text {
@@ -69,20 +86,13 @@
 @media screen and (max-width: 960px) {
     .portfolio-navbar {
         top: 10%;
-        padding: 2.5%;
+        padding: 2%;
         height: 90px;
         transition: 1s;
     }
 
-    .portfolio-navbar.active {
-        height: 130px;
-    }
-
-    .port-nav-menu-icon {
-        display: block;
-        margin-left: -86vw;
-        margin-top: 22px;
-        position: relative;
+    .port-nav-menu {
+        margin-top: 10px;
     }
 
     .port-nav-menu-item {
@@ -90,17 +100,11 @@
         margin-right: 5vw;
     }
 
-    .port-nav-menu {
-        opacity: 0;
-        transition: 0.7s;
-    }
-
-    .port-nav-menu.active {
-        opacity: 1;
-        transition: 2.3s;
-    }
-
     .port-nav-text {
-        font-size: 12pt;
+        font-size: 14pt;
+    }
+
+    .port-nav-menu-icon {
+        margin-top: 25px;
     }
 }
