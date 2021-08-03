@@ -64,6 +64,40 @@ const Philanthropy = () => {
                 </div>
             </div>
             <br></br>
+            <div>
+                <h2
+                    className='phil-heading'
+                    data-aos='flip-up'
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-delay='10'
+                >
+                    Asad was the Freeman for the City of London.
+                </h2>
+                <p
+                    className='phil-para'
+                    data-aos='flip-down'
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-delay='1400'
+                >
+                    His work in the risk intelligence services contributed to the mitigation of third party and reputational risk and
+                    goals to improve education standards and bring integrity and quality to Human Resources.
+                </p>
+                <p
+                    className='phil-para'
+                    data-aos='zoom-in'
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-delay='1400'
+                >
+                    His other philanthropic works include the following:
+                </p>
+            </div>
+            <br></br>
             <PhilanthropyCard />
             <br></br>
         </div>
