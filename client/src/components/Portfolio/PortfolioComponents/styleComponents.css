@@ -49,18 +49,35 @@
 
 /* PHILANTHROPY ITEMS HERE */
 
+/*  grid items for quotation here */
+
+
+
 .quotation {
-    margin-top: 300px;
-    margin-bottom: 300px;
+    margin-top: 500px;
+    margin-bottom: 500px;
     background-color: #15023a;
     padding: 5%;
     /* grid system for quotation defined here */
+    display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 10px;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+}
+
+@media screen and (max-width: 960px) {
+    .quotation {
+        grid-template-columns: auto;
+    }
 }
 
 .phil-quot-image {
     width: 40vw;
+}
+
+.phil-quot-text {
+    font-size: 20pt;
+    font-style: italic;
 }
 
 @media screen and (max-width: 1250px) {
