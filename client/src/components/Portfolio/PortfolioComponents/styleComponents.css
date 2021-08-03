@@ -60,6 +60,7 @@
     grid-template-columns: auto auto;
     grid-template-rows: auto;
     grid-gap: 40px;
+    border-radius: 50px;
 }
 
 @media screen and (max-width: 960px) {
@@ -70,11 +71,21 @@
 
 .phil-quot-image {
     width: 40vw;
+    border-radius: 50px;
 }
 
 .phil-quot-text {
     font-size: 20pt;
     font-style: italic;
+}
+
+.phil-heading, .phil-para {
+    margin-top: 400px;
+    margin-bottom: 400px;
+}
+
+.phil-para {
+    font-size: 20pt;
 }
 
 @media screen and (max-width: 1250px) {
