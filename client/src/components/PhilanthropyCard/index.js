@@ -16,14 +16,15 @@ function PhilanthropyCard() {
                             >
                                 <div>
                                     <img
-                                        scr={data.src}
+                                        className='phil-card-logo img-fluid'
+                                        src={data.src}
                                     >
                                     </img>
                                 </div>
-                                <h1>
+                                <h1 className='phil-card-title'>
                                     {data.title}
                                 </h1>
-                                <p>
+                                <p className='phil-card-description'>
                                     {data.description}
                                 </p>
                             </div>
