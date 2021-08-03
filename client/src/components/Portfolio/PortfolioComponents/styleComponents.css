@@ -43,8 +43,24 @@
 }
 
 .bus-para, .bus-logo {
-    margin-top: 400px;
-    margin-bottom: 400px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+/* PHILANTHROPY ITEMS HERE */
+
+.quotation {
+    margin-top: 300px;
+    margin-bottom: 300px;
+    background-color: #15023a;
+    padding: 5%;
+    /* grid system for quotation defined here */
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+.phil-quot-image {
+    width: 40vw;
 }
 
 @media screen and (max-width: 1250px) {

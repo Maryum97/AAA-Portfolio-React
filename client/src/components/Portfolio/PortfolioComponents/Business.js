@@ -21,7 +21,7 @@ const Business = () => {
             <br></br>
             <p
                 className='bus-para'
-                data-aos='zoom-out'
+                data-aos='zoom-in'
                 data-aos-once="false"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
@@ -31,9 +31,9 @@ const Business = () => {
             </p>
             <br></br>
             <img
-                className='bus-logo'
+                className='bus-logo img-fluid'
                 src={Logo1}
-                data-aos='fade-left'
+                data-aos='flip-left'
                 data-aos-once="false"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
@@ -42,9 +42,9 @@ const Business = () => {
             </img>
             <br></br>
             <img
-                className='bus-logo'
+                className='bus-logo img-fluid'
                 src={Logo2}
-                data-aos='fade-right'
+                data-aos='flip-right'
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
                 data-aos-once="false"
@@ -53,9 +53,9 @@ const Business = () => {
             </img>
             <br></br>
             <img
-                className='bus-logo'
+                className='bus-logo img-fluid'
                 src={Logo3}
-                data-aos='fade-left'
+                data-aos='flip-left'
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
                 data-aos-once="false"
