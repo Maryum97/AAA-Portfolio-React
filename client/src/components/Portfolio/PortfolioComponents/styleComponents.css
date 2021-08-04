@@ -1,0 +1,142 @@
+.welcome-msg {
+    text-align: auto;
+    font-size: 70pt;
+    font-weight: 700;
+    margin-top: 400px;
+    margin-bottom: 400px;
+    color: white;
+}
+
+#welcome {
+    max-height: 1500px;
+}
+
+#business, #philanthropy, #awards {
+    padding: 3%;
+    color: white;
+    text-align: center;
+}
+
+.bus-header, .phil-header, .awards-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+    z-index: 10;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), blue, green, rgba(0, 0, 0, 0));
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30pt;
+    font-weight: 700;
+}
+
+/* BUSINESS ITEMS HERE */
+
+.bus-para {
+    font-size: 20pt;
+}
+
+.bus-logo {
+    max-width: 70%;
+}
+
+.bus-para, .bus-logo {
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+/* PHILANTHROPY ITEMS HERE */
+
+.quotation {
+    margin-top: 500px;
+    margin-bottom: 500px;
+    background-color: #15023a;
+    padding: 5%;
+    /* grid system for quotation defined here */
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 960px) {
+    .quotation {
+        grid-template-columns: auto;
+    }
+}
+
+.phil-quot-image {
+    width: 40vw;
+    border-radius: 50px;
+}
+
+.phil-quot-text {
+    font-size: 25pt;
+    font-style: italic;
+}
+
+.phil-heading, .phil-para {
+    margin-top: 400px;
+    margin-bottom: 400px;
+}
+
+.phil-para {
+    font-size: 20pt;
+}
+
+/* AWARDS ITEMS HERE */
+
+.awards-grid {
+    margin-top: 400px;
+    margin-bottom: 400px;
+    /* define grid for awards here */
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+}
+
+@media screen and (max-width: 1260px) {
+    .awards-grid {
+        grid-template-columns: auto;
+    }
+
+    .awards-heading, .awards-para {
+        margin-top: 400px;
+        margin-bottom: 400px;
+    }
+}
+
+.awards-para {
+    font-size: 20pt;
+}
+
+@media screen and (max-width: 1250px) {
+    #welcome {
+        max-height: 1000px;
+    }
+
+    .bus-header, .phil-header, .awards-header {
+        top: 20%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .welcome-msg {
+        font-size: 40pt;
+        margin-top: 160pt;
+    }
+
+    #welcome {
+        max-height: 800px;
+    }
+
+    .bus-header, .phil-header, .awards-header {
+        font-size: 20pt;
+        padding: 2%;
+        margin-top: -5px;
+        top: 26%;
+    }
+}

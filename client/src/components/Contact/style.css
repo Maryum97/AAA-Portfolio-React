@@ -1,0 +1,135 @@
+.contact {
+    padding: 4%;
+}
+
+@media screen and (max-width: 1420px) {
+    .contact {
+        height: 1000px;
+    }    
+}
+    
+.contact-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contact-items {
+    padding: 3%;
+    max-height: 50vh;
+    min-height: 50vh;
+    border-color: #15023a;
+    background-color: rgba(187, 187, 187, 0.404);
+}
+
+.user-name, .user-email, .user-message {
+    font-size: 18pt;
+    padding: 0.6%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-message {
+    height: 25vh;
+}
+
+.send-btn {
+    width: 20%;
+    position: relative;
+    margin-left: 40%;
+    margin-right: 60%;
+    padding: 1%;
+    font-size: 20pt;
+    color: white;
+    transition: 0.5s;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 2px 20px 0 rgba(0,0,0,0.19);
+}
+
+.send-btn:hover {
+    transition: 0.6s;
+    margin-left: 41%;
+}
+
+/* Modal styles start here */
+.modal-background {
+    text-align: center;
+    padding: 10%;
+    background-color: rgba(0, 0, 0, 0.527);
+    margin-top: -500px;
+    z-index: 100;
+    position: fixed;
+    top: 500px;
+    left: 0px;
+    width: 100%;
+    height: 2000px;
+    padding-top: 300px;
+}
+
+.modal-box {
+    text-align: center;
+    background-color: #10127e;
+    padding: 1%;
+    border-radius: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.modal-interior {
+    background-color: white;
+    border-radius: 20px;
+    padding: 4%;
+}
+
+.modal-title {
+    font-size: 30pt;
+    font-weight: 650;
+}
+
+.modal-text {
+    font-size: 20pt;
+    margin-top: 20px;
+}
+
+.close-btn {
+    padding: 2%;
+    width: 50%;
+    font-size: 16pt;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 960px) {
+    .contact-items {
+        max-height: 60vh;
+        min-height: 60vh;
+    }
+
+    .user-message {
+        height: 30vh;
+    }
+
+    .user-message, .user-email, .send-btn {
+        padding: 2%;
+        font-size: 17pt;
+    }
+
+    .send-btn {
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .modal-box {
+        margin-top: -30px;
+        width: 90%;
+    }
+
+    .modal-title {
+        font-size: 25pt;
+    }
+    
+    .modal-text {
+        font-size: 15pt;
+        margin-top: 20px;
+    }
+}
