@@ -2,13 +2,13 @@
     text-align: auto;
     font-size: 70pt;
     font-weight: 700;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 400px;
+    margin-bottom: 400px;
     color: white;
 }
 
 #welcome {
-    max-height: 1000px;
+    max-height: 1500px;
 }
 
 #business, #philanthropy, #awards {
@@ -58,7 +58,6 @@
     /* grid system for quotation defined here */
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto;
     grid-gap: 40px;
     border-radius: 50px;
 }
@@ -75,7 +74,7 @@
 }
 
 .phil-quot-text {
-    font-size: 20pt;
+    font-size: 25pt;
     font-style: italic;
 }
 
@@ -85,6 +84,32 @@
 }
 
 .phil-para {
+    font-size: 20pt;
+}
+
+/* AWARDS ITEMS HERE */
+
+.awards-grid {
+    margin-top: 400px;
+    margin-bottom: 400px;
+    /* define grid for awards here */
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+}
+
+@media screen and (max-width: 1260px) {
+    .awards-grid {
+        grid-template-columns: auto;
+    }
+
+    .awards-heading, .awards-para {
+        margin-top: 400px;
+        margin-bottom: 400px;
+    }
+}
+
+.awards-para {
     font-size: 20pt;
 }
 
