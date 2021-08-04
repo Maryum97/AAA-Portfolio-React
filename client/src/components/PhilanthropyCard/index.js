@@ -25,7 +25,7 @@ function PhilanthropyCard() {
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="false"
-                        data-aos-delay='10'
+                        data-aos-delay='-10'
                     >
                         <div>
                             <img
@@ -35,7 +35,7 @@ function PhilanthropyCard() {
                                 data-aos-easing="ease-in-out"
                                 data-aos-mirror="true"
                                 data-aos-once="false"
-                                data-aos-delay='500'
+                                data-aos-delay='200'
                             >
                             </img>
                         </div>
@@ -45,17 +45,17 @@ function PhilanthropyCard() {
                             data-aos-easing="ease-in-out"
                             data-aos-mirror="true"
                             data-aos-once="false"
-                            data-aos-delay='1000'
+                            data-aos-delay='400'
                         >
                             {data.title}
                         </h3>
                         <p
                             className='phil-card-description'
-                            data-aos='flip-down'
+                            data-aos='flip-up'
                             data-aos-easing="ease-in-out"
                             data-aos-mirror="true"
                             data-aos-once="false"
-                            data-aos-delay='1000'
+                            data-aos-delay='400'
                         >
                             {data.description}
                         </p>
