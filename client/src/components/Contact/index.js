@@ -128,24 +128,27 @@ export default class Contact extends Component {
                     <h1 style={{ textAlign: 'center' }}>Feel free to get in touch with Asad:</h1>
                     <br></br>
                     <form className='contact-items card' onSubmit={this.handleSubmit}>
+                        <h3>Full Name</h3>
                         <input
                             type='text'
                             className='user-name'
-                            placeholder='Your full name...'
+                            placeholder='Type your full name...'
                             value={this.state.name}
                             onChange={this.handleNameChange}
                             required
                         ></input>
                         <br></br>
+                        <h3>Email</h3>
                         <input
                             type='email'
                             className='user-email'
-                            placeholder='Your email...'
+                            placeholder='Type your email...'
                             value={this.state.email}
                             onChange={this.handleEmailChange}
                             required
                         ></input>
                         <br></br>
+                        <h3>Message</h3>
                         <textarea
                             type='textarea'
                             className='user-message'
