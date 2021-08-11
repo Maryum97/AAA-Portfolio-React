@@ -133,3 +133,17 @@
         margin-top: 20px;
     }
 }
+
+.msg {
+    background-color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    margin-top: 20px;
+    display: none;
+  }
+  
+  .msgAppear {
+    display: block;
+  }
